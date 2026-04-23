@@ -29,6 +29,24 @@ The old WordPress/HTTrack static site has been cleaned up and is in the repo. A 
 
 ---
 
+## What Was Done (Session 2 — 2026-04-23)
+
+### Jekyll Rebuild — Complete
+- Created `_config.yml` (Jekyll config, excludes old WP folders and resume)
+- Created `_layouts/default.html` (sticky nav, OG tags, Google Fonts, footer)
+- Created `assets/css/main.css` (Aggie Blue #004684 / Gold #FDB927, Poppins + Inter, fully responsive)
+- Created `assets/js/main.js` (scroll shadow, mobile nav toggle)
+- Replaced `index.html` with Jekyll single-page site (6 sections: Hero, AEI, Media, Research, Data Musings, Book a Talk)
+- Compressed `GroundworkHS_38.jpg` → `assets/images/headshot.jpg` (900×674, 36 KB)
+
+### Still Needed
+- **Formspree**: Replace `YOUR_FORM_ID` in `index.html` contact form with actual Formspree endpoint
+- **Custom domain**: GoDaddy DNS A records + CNAME still pending
+- **AEI URL**: Add real link to AEI report/dashboard once available
+- **More Data Musings**: Port second essay to Jekyll or add new ones
+
+---
+
 ## Rebuild Plan (Next Session)
 
 ### Stack

@@ -1,0 +1,15 @@
+title: "Alfredo A. Romero"
+description: "Economist · NC A&T State University"
+baseurl: ""
+url: "https://alfredoromero.com"
+author: "Alfredo A. Romero"
+
+# Build
+markdown: kramdown
+permalink: pretty
+exclude:
+  - "resume/"
+  - "*.docx"
+  - "CLAUDE.md"
+  - "wp-admin/"
+  - "wp-json/"
