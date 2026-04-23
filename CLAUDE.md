@@ -1,45 +1,67 @@
-# Website Migration: GoDaddy WordPress → GitHub Pages
+# alfredoromero.github.io — Site Rebuild
 
-## Project Overview
+## Status
+The old WordPress/HTTrack static site has been cleaned up and is in the repo. A full rebuild is planned and in progress.
 
-Migrated `alfredoromero.com` from a GoDaddy-hosted WordPress site to a static site hosted on GitHub Pages.
+## What Was Done (Session 1 — 2026-04-23)
 
-## What Was Done
+### Cleanup of HTTrack Export
+- Deleted: `wp-admin/`, `wp-json/`, `wp-login.html`, `wp-loginc2b6.html`, `xmlrpc.php`, `xmlrpc0db0.php`, 19 orphan redirect files
+- Stripped from all 35 HTML pages: WordPress emoji script, HTTrack mirror comments, `wlwmanifest`/`EditURI`/`pingback`/`shortlink`/generator meta tags, invisible SVG duotone blocks, Meta sidebar widget ("Log in", "WordPress.org"), empty Recent Comments widget, "Proudly powered by WordPress" footer credit
+- Fixed Google Fonts URLs: `http://` → `https://`
+- Fixed both search forms (floating overlay + sidebar): now submit to DuckDuckGo with `sites=alfredoromero.github.io`
+- Added Open Graph + Twitter Card tags to all pages (per-page title, shared description, headshot image)
+- Added SVG favicon (`favicon.svg` — red #d10014, white "AR" initials)
+- Created `sitemap.xml` (24 content pages) and `robots.txt`
+- Fixed typo: folder renamed `crypotocurrencies-...` → `cryptocurrencies-...`, updated in 8 linking pages
+- Updated copyright year 2022 → 2026 across all pages
 
-### 1. Static Site Export
-- Used **HTTrack Website Copier** to crawl and download the live WordPress site as static HTML/CSS/JS files.
-- HTTrack output saved to `C:\My Web Sites\alfredoromero.com\alfredoromero.com\`
+### Repo Setup
+- GitHub repo: `https://github.com/MacroInsights/alfredoromero.github.io`
+- Local path: `C:\Users\aaromero\Desktop\Github Projects\alfredoromero.github.io\`
+- GitHub Pages URL: `https://macroinsights.github.io/alfredoromero.github.io/`
+- Target custom domain: `alfredoromero.com` (DNS not yet configured)
 
-### 2. Repository Setup
-- GitHub repo created at: `https://github.com/MacroInsights/alfredoromero.github.io`
-- Initialized a standalone git repo inside `C:\Users\aaromero\Desktop\Github Projects\website\`
-- Copied all static site files from HTTrack output into this repo
-- Pushed to GitHub (branch: `master`)
-
-### 3. GitHub Pages
-- Enabled GitHub Pages in repo Settings → Pages
-- Source: `master` branch, root `/`
-- Temporary GitHub URL: `https://macroinsights.github.io/alfredoromero.github.io/`
-
-### 4. Custom Domain (In Progress)
-- Custom domain `alfredoromero.com` needs to be pointed to GitHub Pages
-- Add these A records in GoDaddy DNS:
-  - `185.199.108.153`
-  - `185.199.109.153`
-  - `185.199.110.153`
-  - `185.199.111.153`
+### Custom Domain — Pending
+- Add A records in GoDaddy DNS: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
 - Add CNAME record: `www` → `macroinsights.github.io`
-- Add custom domain in GitHub Pages settings: `alfredoromero.com`
+- Add custom domain in GitHub Pages Settings → Pages
 
-### 5. Image Fix
-- WordPress embeds responsive image sizes via `srcset` attributes with absolute URLs pointing to `alfredoromero.com`
-- HTTrack only downloaded the primary image size, leaving `srcset` URLs broken
-- Fixed by stripping all `srcset="http://alfredoromero.com..."` attributes from 29 HTML files using PowerShell
-- Images now load from relative `src` paths using locally downloaded files
+---
 
-## Known Limitations
-- Search forms still point to `http://alfredoromero.com/` (non-functional on static site — WordPress search requires a backend)
-- Some embedded iframes (`src="http://alfredoromero.com/.../embed/..."`) require the old domain to be live
+## Rebuild Plan (Next Session)
 
-## Local Folder Note
-The local folder is named `website` but the GitHub repo is named `alfredoromero.github.io`. This is cosmetic — git connects them via the remote URL. Can be renamed once Claude Code is not running from this directory.
+### Stack
+**Jekyll** — GitHub Pages builds it natively, no CI/CD setup needed, push-to-deploy.
+
+### Design
+- Colors: **Aggie Blue `#004684`** and **Aggie Gold `#FDB927`** (official NC A&T brand, matches AEI branding)
+- Typography: Poppins headings (keep), clean sans-serif body
+- Layout: Modern, editorial — not generic academic template
+
+### Sections (in order)
+1. **Hero** — New headshot + name + "Former Senior Economist, U.S. Congress • Interim Chair, NC A&T Economics" + CTAs: "Book a Talk" and "Aggie Economic Index"
+2. **Aggie Economic Index** — Featured product section with description and link to report/dashboard
+3. **In the Media** — Logo bar (CNN, CNBC, MSNBC, NPR, WSJ, Univision, Telemundo) + 3–4 featured appearances
+4. **Research** — Clean paper list
+5. **Data Musings** — Blog/essay section (2 existing essays + room to add more)
+6. **Book a Talk** — Speaker bio + contact/booking form
+
+### Headshot
+- New professional photos (January 2026, Groundwork Photography) are in:
+  `C:\Users\aaromero\OneDrive - North Carolina A&T State University\Work\Resume and Pics\2026 01 Headshots\Web\`
+- Files: `GroundworkHS_34.jpg` through `GroundworkHS_38.jpg` (~2.3MB each — need compression to ~400KB)
+- **Need to confirm:** which shot (34–38) to use
+
+### CV / Bio Source
+- Rolling CV: `resume/Alfredo_A_Romero Rolling CV.docx` (inside this repo)
+- Key credentials to feature:
+  - Interim Chair, Department of Economics, NC A&T SU (2024–present)
+  - Former Senior Economist, U.S. Congressional Joint Economic Committee (2023–2024)
+  - Former WSJ Panel of Economic Forecasters (2021–2023)
+  - Former Fed Survey of Professional Forecasters (2022–2023)
+  - Aggie Economic Index — creator
+  - Bilingual media economist: CNN, CNBC, MSNBC, NPR, WSJ, Barron's, Univision, Telemundo
+
+### Content to Port
+All existing content (research papers, media appearances, invited talks, Data Musings essays) to be ported to Jekyll Markdown during rebuild. Source HTML is in the current repo folders.
