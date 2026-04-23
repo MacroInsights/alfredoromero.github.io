@@ -74,7 +74,7 @@ The old WordPress/HTTrack static site has been cleaned up and is in the repo. A 
 ### CV / Bio Source
 - Rolling CV: `resume/Alfredo_A_Romero Rolling CV.docx` (inside this repo)
 - Key credentials to feature:
-  - Interim Chair, Department of Economics, NC A&T SU (2024–present)
+  - Chair, Department of Economics, NC A&T SU (2024–present)
   - Former Senior Economist, U.S. Congressional Joint Economic Committee (2023–2024)
   - Former WSJ Panel of Economic Forecasters (2021–2023)
   - Former Fed Survey of Professional Forecasters (2022–2023)
