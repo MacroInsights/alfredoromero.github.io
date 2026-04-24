@@ -95,7 +95,8 @@ description: "Interim Chair of Economics at NC A&T State University. Former Seni
     </p>
 
     <div class="media-grid">
-      {% for item in site.data.media %}
+      {% assign sorted_media = site.data.media | sort: "sort_date" | reverse %}
+      {% for item in sorted_media %}
       <div class="media-card">
         <p class="media-card-outlet">{{ item.outlet }}</p>
         <p class="media-card-title">{{ item.title }}</p>

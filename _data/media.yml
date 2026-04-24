@@ -1,59 +1,69 @@
 - outlet: MSNBC
   title: "Commentary on The Inflation Reduction Act"
   date: "August 16, 2022"
+  sort_date: "2022-08-16"
   url: "commentary-on-msnbc-on-the-inflation-reduction-act-august-16-2022/"
   link_text: "Watch segment"
 
 - outlet: WFMY News 2
   title: "Are we in a housing bubble? Economic fundamentals say no"
   date: "June 20, 2022"
+  sort_date: "2022-06-20"
   url: "commentary-in-wfmy2-june-20-2022/"
   link_text: "Watch segment"
 
 - outlet: WFMY News 2
   title: "Housing supply, high prices, and bubble fears"
   date: "May 2, 2022"
+  sort_date: "2022-05-02"
   url: "commentary-in-wfmy2-may-2-2022/"
   link_text: "Watch segment"
 
 - outlet: WFMY News 2
   title: "Local economic commentary — multiple appearances"
   date: "2022"
+  sort_date: "2022-01-01"
   url: "commentary-in-wfmy/"
   link_text: "Watch segments"
 
 - outlet: Univision Noticias
   title: "Interest rate hikes — a double-edged sword for families"
   date: "March 2022"
+  sort_date: "2022-03-01"
   url: "commentary-in-univision-noticias/"
   link_text: "Watch segment"
 
 - outlet: Univision Noticias
   title: "Economic analysis on Univision Noticias"
   date: "2022"
+  sort_date: "2022-01-01"
   url: "http://uni.vi/Emfr103uak7"
   link_text: "Watch segment"
 
 - outlet: El Diario NY
   title: "Inflation's unequal burden — commentary in El Diario NY"
   date: "January 2022"
+  sort_date: "2022-01-12"
   url: "commentary-in-el-diario-ny/"
   link_text: "Read article"
 
 - outlet: Voz de América
   title: "U.S. inflation hits 7% — highest in nearly 40 years"
   date: "January 2022"
+  sort_date: "2022-01-12"
   url: "commentary-in-voz-de-america/"
   link_text: "Watch segment"
 
 - outlet: Agencia EFE
   title: "Inflation's disproportionate impact on Latino communities"
   date: "January 2022"
+  sort_date: "2022-01-12"
   url: "commentary-on-agencia-efe/"
   link_text: "Read article"
 
 - outlet: Enlace Latino NC
   title: "¿Por qué está subiendo el precio de la gasolina y hasta cuándo?"
   date: "2022"
+  sort_date: "2022-01-01"
   url: "https://enlacelatinonc.org/por-que-esta-subiendo-el-precio-de-la-gasolina-y-hasta-cuando/"
   link_text: "Read article"
