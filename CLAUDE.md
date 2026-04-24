@@ -57,6 +57,9 @@ The old WordPress/HTTrack static site has been cleaned up and is in the repo. A 
 - **Data Musings placeholder**: Remove or replace the 55%-opacity "coming soon" card with a real essay or remove entirely
 - **Formspree form ID**: Replace `YOUR_FORM_ID` in `index.html` contact form with actual endpoint
 
+### Future: Dynamic outlet logo bar
+Currently the logo bar buttons in `index.html` are hardcoded. To make it dynamic (add outlet to data → badge and filter appear automatically), create `_data/outlets.yml` mapping each outlet name to a brand color, then generate the logo bar via Liquid from that file. Media cards from `_data/media.yml` are already dynamic; this would bring the badges in line.
+
 ---
 
 ## Rebuild Plan (Next Session)
