@@ -46,7 +46,6 @@ a:hover { color: var(--blue-dark); }
 }
 
 section { padding: 5rem 0; }
-section:nth-child(even) { background: var(--off-white); }
 
 .section-label {
   display: inline-block;
