@@ -47,6 +47,18 @@ The old WordPress/HTTrack static site has been cleaned up and is in the repo. A 
 
 ---
 
+## What Was Done (Session 3 — 2026-04-24)
+
+- Added outlet logo bar to "In the Media" section (CNN, CNBC, MSNBC, NPR, WSJ, Barron's, Univision, Telemundo, Radio Bilingüe) using existing `.media-logos` / `.media-logo-badge` CSS classes
+- Fixed media section subtitle from placeholder LinkedIn copy to: "Featured economist on national television, radio, and print — in English and Spanish."
+
+### Still Needed (Oomph pass — deferred)
+- **Stats row**: Add 3 impact numbers above the fold (e.g., media appearances count, publications, years experience)
+- **Data Musings placeholder**: Remove or replace the 55%-opacity "coming soon" card with a real essay or remove entirely
+- **Formspree form ID**: Replace `YOUR_FORM_ID` in `index.html` contact form with actual endpoint
+
+---
+
 ## Rebuild Plan (Next Session)
 
 ### Stack

@@ -95,21 +95,22 @@ description: "Interim Chair of Economics at NC A&T State University. Former Seni
     </p>
 
     <div class="media-logos">
-      <span class="media-logo-badge">CNN</span>
-      <span class="media-logo-badge">CNBC</span>
-      <span class="media-logo-badge">MSNBC</span>
-      <span class="media-logo-badge">NPR</span>
-      <span class="media-logo-badge">WSJ</span>
-      <span class="media-logo-badge">Barron's</span>
-      <span class="media-logo-badge">Univision</span>
-      <span class="media-logo-badge">Telemundo</span>
-      <span class="media-logo-badge">Radio Bilingüe</span>
+      <button class="media-logo-badge filter-active" data-filter="all">All</button>
+      <button class="media-logo-badge brand-cnn"          data-filter="CNN">CNN</button>
+      <button class="media-logo-badge brand-cnbc"         data-filter="CNBC">CNBC</button>
+      <button class="media-logo-badge brand-msnbc"        data-filter="MSNBC">MSNBC</button>
+      <button class="media-logo-badge brand-npr"          data-filter="NPR">NPR</button>
+      <button class="media-logo-badge brand-wsj"          data-filter="WSJ">WSJ</button>
+      <button class="media-logo-badge brand-barrons"      data-filter="Barron">Barron's</button>
+      <button class="media-logo-badge brand-univision"    data-filter="Univision">Univision</button>
+      <button class="media-logo-badge brand-telemundo"    data-filter="Telemundo">Telemundo</button>
+      <button class="media-logo-badge brand-radiobilingue" data-filter="Radio Biling">Radio Bilingüe</button>
     </div>
 
     <div class="media-grid">
       {% assign sorted_media = site.data.media | sort: "sort_date" | reverse %}
       {% for item in sorted_media %}
-      <div class="media-card">
+      <div class="media-card" data-outlet="{{ item.outlet }}">
         <p class="media-card-outlet">{{ item.outlet }}</p>
         <p class="media-card-title">{{ item.title }}</p>
         <p class="media-card-date">{{ item.date }}</p>

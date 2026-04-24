@@ -381,12 +381,48 @@ section { padding: 5rem 0; }
   border: 2px solid var(--gray-light);
   border-radius: var(--radius);
   transition: all 0.2s;
+  background: none;
+  cursor: pointer;
+  line-height: 1;
 }
 .media-logo-badge:hover {
   color: var(--blue);
   border-color: var(--blue);
   background: var(--blue-light);
 }
+.media-logo-badge.filter-active {
+  color: var(--blue);
+  border-color: var(--blue);
+  background: var(--blue-light);
+}
+
+/* Brand-coloured filter buttons */
+.brand-cnn          { color: #c00;    border-color: rgba(204,0,0,.25); }
+.brand-cnn:hover,   .brand-cnn.filter-active   { color: #c00;    border-color: #c00;    background: rgba(204,0,0,.07); }
+
+.brand-cnbc         { color: #005ea6; border-color: rgba(0,94,166,.25); }
+.brand-cnbc:hover,  .brand-cnbc.filter-active  { color: #005ea6; border-color: #005ea6; background: rgba(0,94,166,.07); }
+
+.brand-msnbc        { color: #f37021; border-color: rgba(243,112,33,.25); }
+.brand-msnbc:hover, .brand-msnbc.filter-active { color: #f37021; border-color: #f37021; background: rgba(243,112,33,.07); }
+
+.brand-npr          { color: #222;    border-color: rgba(34,34,34,.25); }
+.brand-npr:hover,   .brand-npr.filter-active   { color: #222;    border-color: #222;    background: rgba(34,34,34,.07); }
+
+.brand-wsj          { color: #111;    border-color: rgba(17,17,17,.25); }
+.brand-wsj:hover,   .brand-wsj.filter-active   { color: #111;    border-color: #111;    background: rgba(17,17,17,.07); }
+
+.brand-barrons      { color: #8b0000; border-color: rgba(139,0,0,.25); }
+.brand-barrons:hover, .brand-barrons.filter-active { color: #8b0000; border-color: #8b0000; background: rgba(139,0,0,.07); }
+
+.brand-univision    { color: #e45c00; border-color: rgba(228,92,0,.25); }
+.brand-univision:hover, .brand-univision.filter-active { color: #e45c00; border-color: #e45c00; background: rgba(228,92,0,.07); }
+
+.brand-telemundo    { color: #0070c9; border-color: rgba(0,112,201,.25); }
+.brand-telemundo:hover, .brand-telemundo.filter-active { color: #0070c9; border-color: #0070c9; background: rgba(0,112,201,.07); }
+
+.brand-radiobilingue { color: #2e7d32; border-color: rgba(46,125,50,.25); }
+.brand-radiobilingue:hover, .brand-radiobilingue.filter-active { color: #2e7d32; border-color: #2e7d32; background: rgba(46,125,50,.07); }
 
 .media-grid {
   display: grid;
