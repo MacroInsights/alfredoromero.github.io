@@ -162,7 +162,7 @@ section { padding: 5rem 0; }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 300px;
   gap: 4rem;
   align-items: center;
 }
@@ -442,6 +442,25 @@ section { padding: 5rem 0; }
 }
 .media-card-link::after { content: ' →'; }
 .media-card-link:hover { color: var(--blue-dark); }
+
+.media-show-all {
+  display: block;
+  margin: 1.5rem auto 0;
+  background: none;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.media-show-all:hover {
+  background: var(--blue);
+  color: var(--white);
+}
 
 /* --- RESEARCH ----------------------------------- */
 .research-section { background: var(--off-white); }

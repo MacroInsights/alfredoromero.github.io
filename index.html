@@ -145,6 +145,31 @@ description: "Interim Chair of Economics at NC A&T State University. Former Seni
 
 
 <!-- ================================================
+     TRUSTED VOICE ON LINKEDIN
+     ================================================ -->
+<section id="linkedin" class="media-section" style="background: var(--off-white);">
+  <div class="container">
+    <span class="section-label">LinkedIn</span>
+    <h2 class="section-title">Trusted Voice on LinkedIn</h2>
+    <p class="section-subtitle">
+      Economic commentary and analysis shared on LinkedIn.
+    </p>
+
+    <div class="media-grid linkedin-grid">
+      {% for item in site.data.media %}
+      <div class="media-card">
+        <p class="media-card-outlet">{{ item.outlet }}</p>
+        <p class="media-card-title">{{ item.title }}</p>
+        <p class="media-card-date">{{ item.date }}</p>
+        <a href="{{ item.url }}" class="media-card-link" target="_blank" rel="noopener">{{ item.link_text }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================
      RESEARCH
      ================================================ -->
 <section id="research" class="research-section">
